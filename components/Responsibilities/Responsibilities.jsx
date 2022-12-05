@@ -1,9 +1,11 @@
 import { Card, Col, Row, Button, Text } from "@nextui-org/react";
+import Image from 'next/image'
 import Tilt from "react-parallax-tilt";
 import DoneIcon from "@mui/icons-material/Done";
+import CardImage from '../../assets/vr1.jpg'
 
 const Responsibilities = () => (
-  <div className="grid sm:grid-flow-col grid-flow-row gap-10 p-10">
+  <div className="container mx-auto  grid sm:grid-flow-col grid-flow-row gap-10 p-10">
     <Tilt>
       <Card css={{ w: "100%", h: "400px" }}>
         <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
@@ -12,16 +14,16 @@ const Responsibilities = () => (
               Your day your way
             </Text>
             <Text h3 color="white">
-              Your checklist for better sleep
+              The future of collabration is metaverse
             </Text>
           </Col>
         </Card.Header>
         <Card.Body css={{ p: 0 }}>
-          <Card.Image
-            src="https://nextui.org/images/card-example-5.jpeg"
+          <Image
+            src={CardImage}
             objectFit="cover"
             width="100%"
-            height="100%"
+            
             alt="Relaxing app background"
           />
         </Card.Body>
